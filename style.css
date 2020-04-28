@@ -37,3 +37,42 @@ footer ul {
   padding: 1%;
   color: #FFFFFF; 
 }
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.workGrid {
+  display: grid;
+  grid-template-columns: 33.33 33.33 33.33%
+  grid-template-rows: 100%;
+  grid-template-areas: 'Left Middle Right';
+}
+.LHTY {
+  grid-area: Left;
+}
+.LHTY2 {
+  grid-area: Middle;
+}
+.FRIDGE {
+  grid-area: Right;
+}
+.workGrid > div
+.LHTY {
+  grid-area: content;
+}
+.FRIDGE {
+  grid-area: content;
+}
+.LHTY {
+  grid-area: content;
+}
+@media only screen and (max-width: 600px) {
+  .flex-container {display: column; width: 100%;}
+  #categoryGrid {
+    grid-template-rows: 
+    grid-template-columns: 1fr;
+    grid-template-areas: 'Left Middle Right';
+
+    
+}
